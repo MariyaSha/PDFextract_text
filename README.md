@@ -25,6 +25,6 @@ If you do not require a tutorial, and just want to take a peak at the code
 <br>
 <b>Author:</b> Mariya Sha
 <br>
-<b>LinkedIn:</b> www.linkedin.com/mariyasha888
+<b>LinkedIn:</b> www.linkedin.com/in/mariyasha888
 <br>
 <b>Email:</b> mariyasha888@gmail.com
