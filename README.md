@@ -22,8 +22,6 @@ This file contains the full beta app, you can download the files and run it in y
 <br>
 If you do not require a tutorial, and just want to take a peak at the code
 <br>
- 
-<b>
 <br>
 <b>Author:</b> Mariya Sha
 <br>
