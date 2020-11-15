@@ -2,8 +2,11 @@ import tkinter as tk
 import PyPDF2
 from PIL import Image, ImageTk
 from tkinter.filedialog import askopenfile
+from tkinter import messagebox
 
 root = tk.Tk()
+root.title("PDF Extract Text")
+root.resizable(False, False)
 
 canvas = tk.Canvas(root, width=600, height=300)
 canvas.grid(columnspan=3, rowspan=3)
@@ -36,6 +39,11 @@ def open_file():
 
         browse_text.set("Browse")
 
+#function for event
+def on_closing():
+    if messagebox.askyesno("PDF Extract Text", "ಡ ﹏ ಡ\nDo you really want to go...?"):
+        root.destroy()
+
 #browse button
 browse_text = tk.StringVar()
 browse_btn = tk.Button(root, textvariable=browse_text, command=lambda:open_file(), font="Raleway", bg="#20bebe", fg="white", height=2, width=15)
@@ -45,4 +53,8 @@ browse_btn.grid(column=1, row=2)
 canvas = tk.Canvas(root, width=600, height=250)
 canvas.grid(columnspan=3)
 
+#window manager delete window event
+root.protocol("WM_DELETE_WINDOW", on_closing)
+
+#main program 
 root.mainloop()
