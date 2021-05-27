@@ -29,8 +29,8 @@ If you do not require a tutorial, and just want to have a peak at the code.
 <br>
 <b>Author:</b> Mariya Sha
 <br>
-<b>Email:</b> mariyasha888@gmail.com
-<br>
 <b>LinkedIn:</b> www.linkedin.com/in/mariyasha888
 <br>
 <b>Youtube:</b> www.youtube.com/PythonSimplified
+<br>
+<b>Instagram:</b> www.instagram.com/mariyasha888
