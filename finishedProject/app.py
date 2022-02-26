@@ -2,6 +2,7 @@ import tkinter as tk
 import PyPDF2
 from PIL import Image, ImageTk
 from tkinter.filedialog import askopenfile
+import os
 
 root = tk.Tk()
 
@@ -9,6 +10,9 @@ canvas = tk.Canvas(root, width=1600, height=600)
 canvas.grid(columnspan=3, rowspan=4)
 
 #logo
+if os.path.exists("finishedProject"):
+    os.chdir("finishedProject")
+
 logo = Image.open('logo.png')
 logo = ImageTk.PhotoImage(logo)
 logo_label = tk.Label(image=logo)
