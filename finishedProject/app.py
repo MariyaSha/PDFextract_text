@@ -18,7 +18,7 @@ logo_label.grid(column=1, row=0)
 #instructions
 instructions = tk.Label(root, text="Select a PDF file on your computer to extract all its text", font="Raleway")
 instructions.grid(columnspan=3, column=0, row=1)
-
+ 
 def open_file():
     browse_text.set("loading...")
     file = askopenfile(parent=root, mode='rb', title="Choose a file", filetypes=[("Pdf file", "*.pdf")])
