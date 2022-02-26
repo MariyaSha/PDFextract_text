@@ -5,8 +5,8 @@ from tkinter.filedialog import askopenfile
 
 root = tk.Tk()
 
-canvas = tk.Canvas(root, width=600, height=300)
-canvas.grid(columnspan=3, rowspan=3)
+canvas = tk.Canvas(root, width=1600, height=600)
+canvas.grid(columnspan=3, rowspan=4)
 
 #logo
 logo = Image.open('logo.png')
@@ -28,9 +28,10 @@ def open_file():
         page_content = page.extractText()
 
         #text box
-        text_box = tk.Text(root, height=10, width=50, padx=15, pady=15)
+        text_box = tk.Text(root, height=20, width=150, padx=15, pady=15, font=("Helvetica",9,""))
         text_box.insert(1.0, page_content)
-        text_box.tag_configure("center", justify="center")
+        text_box.tag_configure("center", justify="left")
+        # text_box.tag_configure("center", justify="center")
         text_box.tag_add("center", 1.0, "end")
         text_box.grid(column=1, row=3)
 
