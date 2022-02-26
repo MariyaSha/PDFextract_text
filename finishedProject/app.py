@@ -26,7 +26,7 @@ def open_file():
         read_pdf = PyPDF2.PdfFileReader(file)
         page = read_pdf.getPage(0)
         page_content = page.extractText()
-
+ 
         #text box
         text_box = tk.Text(root, height=20, width=150, padx=15, pady=15, font=("Helvetica",9,""))
         text_box.insert(1.0, page_content)
