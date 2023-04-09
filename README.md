@@ -1,4 +1,5 @@
-# PDFextract_text
+# PDFextract_text 1.0.0-beta
+
 This is the beta version of PDF Extract, it only extracts text out of user-selected PDF files.
 <br>
 The full version also handles image extraction and exceptions.
